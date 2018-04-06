@@ -72,7 +72,7 @@
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: #D58673;
     color: #fff;
     transition: all 0.3s;
 }
@@ -87,12 +87,12 @@
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #C57663;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #8b4774;
 }
 
 #sidebar ul p {
@@ -112,7 +112,7 @@
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #cccccc;
 }
 
 
@@ -136,29 +136,8 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #cccccc;
 }
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -252,14 +231,14 @@ a.article, a.article:hover {
     <div class="wrapper">
 
         <nav id="sidebar" class="">
-            <!-- Close Sidebar Button -->
-            <div id="dismiss">
+            <!-- Close Sidebar Button - not used -->
+            <!-- <div id="dismiss">
                 <i class="glyphicon glyphicon-arrow-left"></i>
-            </div>
+            </div>-->
 
             <!-- Sidebar Header -->
             <div class="sidebar-header">
-                <h3>Collapsible Sidebar</h3>
+                <h3>Menu</h3>
             </div>
 
             <!-- Sidebar Links -->
@@ -281,10 +260,6 @@ a.article, a.article:hover {
 
        <!-- Page Content Holder -->
         <div id="content" class="">
-          
-              
-         
-
               
               
               
@@ -292,7 +267,7 @@ a.article, a.article:hover {
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+          <button type="button" id="sidebarCollapse" class="btn btn-secondary navbar-btn">
               <i class="glyphicon glyphicon-align-left"></i>
               <span>Menu</span>
           </button>
