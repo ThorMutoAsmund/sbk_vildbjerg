@@ -3,12 +3,11 @@
     HEADER STYLE
 ----------------------------------------------------- */
 
-/*
 #header_wrap {
     background: #d04321;
-    background: -moz-linear-gradient(top, #d04321, #da5434);
-    background: -webkit-linear-gradient(top, #d04321, #da5434);
-}*/
+    background: -moz-linear-gradient(top, #d04321, #c77);
+    background: -webkit-linear-gradient(top, #d04321, #c77);
+}
 
 #header_wrap .inner {
     padding: 30px 10px 10px 10px;
@@ -30,7 +29,7 @@
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #976;
+    background: #b04321;
     color: #fff;
     transition: all 0.3s;
 }
@@ -45,7 +44,7 @@
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #754;
+  background: #d04321;
 }
 
 #sidebar .sidebar-header h3 {
