@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="/sbk_vildbjerg/assets/css/style.css?v=0d420cd3cd351ea02de586ab8cfba438e52ec18f">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://thormutoasmund.github.io/sbk_vildbjerg/assets/css/style.css?v=0d420cd3cd351ea02de586ab8cfba438e52ec18f">
   <link rel="stylesheet" type="text/css" media="screen" href="extra.css">
         
   <!-- Begin Jekyll SEO tag v2.4.0 -->
@@ -31,34 +31,7 @@
 <body>
   <div class="wrapper">
 
-    <nav id="sidebar" class="">
-      <!-- Close Sidebar Button - not used -->
-      <!-- <div id="dismiss">
-          <i class="glyphicon glyphicon-arrow-left"></i>
-      </div>-->
-
-      <!-- Sidebar Header -->
-      <div class="sidebar-header">
-          <h3>Menu</h3>
-      </div>
-
-      <!-- Sidebar Links -->
-      <ul class="list-unstyled components">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="kampe.html">Kampe og resultater</a></li>
-        <li><a href="baneoversigt.html">Baneoversigt</a></li>
-        <li><a href="camping.html">Campinginfo</a></li>
-        <li><a href="kontakt.html">SBK kontaktinfo</a></li>
-        <li>
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Fra Vildbjerg</a>
-          <ul class="collapse list-unstyled" id="homeSubmenu">
-            <li><a href="http://www.vildbjerg-cup.dk/" target="_blank">Website</a></li>
-            <li><a href="https://itunes.apple.com/dk/app/vildbjerg-cup/id526680831" target="_blank">iPhone app</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=commercial.vildbjergcup" target="_blank">Android app</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <div w3-include-html="sidebar.html"></div>
 
     <!-- Page Content Holder -->
     <div id="content">
@@ -118,32 +91,7 @@
   <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-
-      $("#sidebar").mCustomScrollbar({
-          theme: "minimal"
-      });
-
-      // when opening the sidebar
-      $('#sidebarCollapse').on('click', function () {
-          // open sidebar
-          $('#sidebar').addClass('active');
-          // fade in the overlay
-          $('.overlay').fadeIn();
-          $('.collapse.in').toggleClass('in');
-          $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-      });
-
-
-      // if dismiss or overlay was clicked
-      $('#dismiss, .overlay').on('click', function () {
-        // hide the sidebar
-        $('#sidebar').removeClass('active');
-        // fade out the overlay
-        $('.overlay').fadeOut();
-      });
-    });
-  </script>
+  <!-- site specific -->
+  <script src="site.js"></script>
 </body>
 </html>

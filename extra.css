@@ -30,7 +30,7 @@
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #da5434;
+    background: #976;
     color: #fff;
     transition: all 0.3s;
 }
@@ -44,13 +44,17 @@
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #d04321;
+  padding: 20px;
+  background: #754;
+}
+
+#sidebar .sidebar-header h3 {
+  color: #fff;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #8b4774;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul p {
